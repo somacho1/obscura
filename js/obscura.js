@@ -29,6 +29,10 @@ setInterval(()=>{
 
 }, 3500)
 
-document.querySelector(".like_btn").addEventListener("click", function(){
-    this.classList.toggle("active");
+document.querySelectorAll('.like_btn').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+        e.preventDefault(); 
+        this.classList.toggle('active'); 
+    });
 });
+
