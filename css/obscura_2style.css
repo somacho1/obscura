@@ -280,6 +280,9 @@ p {
     height: 25px;
     border: none;
 }
+.like_btn.active {
+    background-position: -25px 0;
+}
 
 
 /* main*/
