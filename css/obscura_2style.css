@@ -672,24 +672,21 @@ p {
                 gap: 12px;
                 list-style: none;
 
-                &>.shoes {
-                    background-color: #222;
-
-                    &>a {
-                        color: #fff;
-                        display: inline-block;
-                    }
-                }
-
                 &>li {
                     border: 1px solid #dddddd99;
                     padding: 13px 41px;
                     background-color: #fff;
                     box-sizing: border-box;
+                      &:hover {
+                        background-color: #000;
+                    }
 
                     &>a {
                         font-weight: 700;
                         color: #3d3d3d;
+                    }
+                     &:hover a {
+                        color: #fff;
                     }
 
                 }
