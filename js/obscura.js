@@ -29,10 +29,18 @@ setInterval(()=>{
 
 }, 3500)
 
+//like_btn
 document.querySelectorAll('.like_btn').forEach(btn => {
     btn.addEventListener('click', function(e) {
         e.preventDefault(); 
         this.classList.toggle('active'); 
     });
 });
+
+//search_box
+
+document.querySelector('.search').onclick = function(){
+    document.querySelector('.search_box').classList.toggle('block');
+};
+
 
